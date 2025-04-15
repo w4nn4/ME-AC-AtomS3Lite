@@ -22,57 +22,57 @@ AC config yaml thanks to https://github.com/fonske/MitsubishiCN105ESPHome/blob/m
 
 1. Make the cable, leave pin5 on PAP-05V-S connector with small triangle blank.
 
-     ![Image](https://github.com/user-attachments/assets/1a84040e-bf04-4802-a2e8-7ed63acea3e0)
+     ![image](https://github.com/user-attachments/assets/5b239f4f-34c9-49b4-b12e-bdae60e25cfd)
 
 2.	Install ESPHome compiler in HA. You may need to update HA first. Settings > Add-ons > Add-on store > ESPHome Device Builder add-on > Install.
 
 3. Go to ESPHome compiler tab in HA and click add device, then click OPEN ESPHOME WEB. It'll take you to a new tab.
 
-     ![Image](https://github.com/user-attachments/assets/d98906c4-3bae-406c-bcda-612fdcfcb195)
+     ![image](https://github.com/user-attachments/assets/10bf9ff1-3a33-4b89-bcd5-dde52846beab)
 
 4. Plug the Atom S3 lite into USB port on your PC. If it's not recognised, install Arduino IDE, or download dodgy drivers from the web.
 
 5. Click connect on the ESPHOME WEB, it will prompt to select the S3 lite over COM port.
 
-     ![Image](https://github.com/user-attachments/assets/f404b590-9ffc-431a-bf0c-81c1dc17180c)
+     ![image](https://github.com/user-attachments/assets/e8945f51-e537-4bc1-b366-839c59f638cb)
 
 6. Click prepare for first use and install.
 
-     ![Image](https://github.com/user-attachments/assets/f9d4959c-3215-4fca-9700-a81ab20b04ed)
+     ![image](https://github.com/user-attachments/assets/906b0141-5c39-48ad-9493-f3f6fd40b06e)
 
 7. Connect to wifi and enter your SSID/Password.
 
-     ![Image](https://github.com/user-attachments/assets/e0675281-9f78-4885-8417-94e4a77fa590)
+     ![image](https://github.com/user-attachments/assets/939ee67f-e6e1-43b8-86c6-89553344155f)
 
 8. It will now connect to wifi, go back to HA where it's autodiscovered.
 
-     ![Image](https://github.com/user-attachments/assets/6bb662a4-cc85-458e-8069-765e0b5da9ee)
+     ![image](https://github.com/user-attachments/assets/fe067502-d1ad-40b1-8f07-082f1d411070)
 
 9. HA will discover the device, click show if it’s hidden.
 
-     ![Image](https://github.com/user-attachments/assets/b3aba78b-c2d7-4975-be9d-434e5d3d1e37)
+     ![image](https://github.com/user-attachments/assets/27465531-7452-45b4-9634-6fcd0b8df8b4)
 
 10. Take control of the new discovered device, give it a name.
 
-      ![Image](https://github.com/user-attachments/assets/0c1f4355-c202-4301-963c-002b39869feb)
+      ![image](https://github.com/user-attachments/assets/f8468c38-e84e-472f-9acb-a7f283f4e14b)
 
 11. Skip this prompt.
 
-      ![Image](https://github.com/user-attachments/assets/be1dcf6c-88cb-49a4-8b6f-10a073054a4e)
+      ![image](https://github.com/user-attachments/assets/d305c3b6-24ba-4945-b70e-c054546b0420)
 
 12. Edit the device to paste Mitsubishi Electric Aircon yaml config.
 
 13. Click install and select manual download. It will build and compile the firmware.
 
-      ![image](https://github.com/user-attachments/assets/36c41155-1c52-43f5-bcfb-77c19078961e)
+      ![image](https://github.com/user-attachments/assets/e1e01593-38ec-4dff-9863-e6c7ed59882c)
 
 14. Select the “Factory Format, previously modern” to download the firmware.bin file.
 
-      ![image](https://github.com/user-attachments/assets/86a006a8-1b80-4af6-b5d3-1a30ac40b4b9)
+      ![image](https://github.com/user-attachments/assets/0d7af673-f64e-440d-aa64-e8f07225b2ad)
 
 15. Go back to web.esphome.io tab where its connected over COM port. Select install and install the firmware.bin file.
 
-      ![image](https://github.com/user-attachments/assets/c8d496b0-294b-4b71-99f7-6141d828ee4d)
+      ![image](https://github.com/user-attachments/assets/4e2e10c9-d69c-4feb-ad87-e6d6ac76cff7)
 
 16. After flashing, click logs while its powered by USB in ESPHome and see if it connects to wifi.
 
@@ -80,22 +80,19 @@ AC config yaml thanks to https://github.com/fonske/MitsubishiCN105ESPHome/blob/m
 
 18. Undo the right-hand-side white plastic cover screws, there were two on the front and one at the bottom under the vanes and lift off.
 
-      ![image](https://github.com/user-attachments/assets/d71a47d9-fcb1-49d6-a987-39d2422fa3aa)
+      ![image](https://github.com/user-attachments/assets/10bf9345-b019-46e2-bb2e-9ae52bcf0219)
 
-20. Remove one screw to remove the metal access panel. Pull the panel to the right then slide forwards. Note 240V AC nearby.
+19. Remove one screw to remove the metal access panel. Pull the panel to the right then slide forwards. Note 240V AC nearby.
 
-      ![image](https://github.com/user-attachments/assets/948fd217-982f-474f-b977-fb1f8e8a6464)
+      ![image](https://github.com/user-attachments/assets/47767191-68d6-466c-96ad-8cb3e31e239d)
 
-21. Plug the Atom S3 lite into the CN105 port.
+20. Plug the Atom S3 lite into the CN105 port.
 
-      ![image](https://github.com/user-attachments/assets/23f1c75f-3773-4f3a-9e36-3c914c5f7d68)
+      ![image](https://github.com/user-attachments/assets/5205cff0-2343-4f23-914a-6b5aa3e4b6a9)
 
+21. Go to Devices in HA. Find ESP32 devices and see if it works.
 
-22. Go to Devices in HA. Find ESP32 devices and see if it works.
-
-      ![image](https://github.com/user-attachments/assets/ae8e8764-ab9f-4b63-b4e1-6d1ad8f546d5)
-
-
+      ![image](https://github.com/user-attachments/assets/cb879cad-a990-4d60-8518-ceddc25c76ee)
 
 
 
