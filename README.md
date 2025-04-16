@@ -90,7 +90,11 @@ AC config yaml thanks to https://github.com/fonske/MitsubishiCN105ESPHome/blob/m
 
       ![image](https://github.com/user-attachments/assets/5205cff0-2343-4f23-914a-6b5aa3e4b6a9)
 
-21. Go to Devices in HA. Find ESP32 devices and see if it works.
+21. Go to Devices in HA. Find ESP32 devices and click configure to adopt it.
+
+      ![{E51E687D-E225-4516-A071-8071DEA74C43}](https://github.com/user-attachments/assets/78bc7e43-cb6b-4e40-829b-d8e4f8716149)
+
+22. It should now be avaliable for use.
 
       ![image](https://github.com/user-attachments/assets/cb879cad-a990-4d60-8518-ceddc25c76ee)
 
